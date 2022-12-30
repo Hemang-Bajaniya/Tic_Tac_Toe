@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <nav>
+        <h4>Tic Tac Toe Game</h4>
+    </nav>
+
+    <div class="container">
+        <div class="control">
+            <h3 id="player"></h3>
+            <button id="reset" onclick="reset()">Reset</button>
+        </div>
+
+        <div class="board">
+
+            <div class="row">
+                <div class="box" id="1" onclick="check(this.id)"></div>
+                <div class="box" id="2" onclick="check(this.id)"></div>
+                <div class="box" id="3" onclick="check(this.id)"></div>
+            </div>
+
+            <div class="row">
+                <div class="box" id="4" onclick="check(this.id)"></div>
+                <div class="box" id="5" onclick="check(this.id)"></div>
+                <div class="box" id="6" onclick="check(this.id)"></div>
+            </div>
+
+            <div class="row">
+                <div class="box" id="7" onclick="check(this.id)"></div>
+                <div class="box" id="8" onclick="check(this.id)"></div>
+                <div class="box" id="9" onclick="check(this.id)"></div>
+            </div>
+
+        </div>
+
+        <div class="score">
+            <h3 id="score-x"></h3>
+            <h3 id="score-o"></h3>
+        </div>
+    </div>
+</body>
+</html>
